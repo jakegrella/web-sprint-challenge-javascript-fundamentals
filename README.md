@@ -26,15 +26,36 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+    .forEach - works similar to a for loop, but must iterate through every item in the array without stopping. forEach does not return a new array and the return statement is optional.
+    .map - map always returns a new array and needs the return keyword. map also does not manipulate the original array and is good at converting data.
 
 2. Explain the difference between a callback and a higher order function.
+    A higher order function is a function that takes in another function as an argument. A callback is a function that is passed to another function.
 
 3. What is closure?
+    A closure gives a function access to the parent's scope, and is created every time a funciton is created.
 
 4. Describe the four rules of the 'this' keyword.
+    - Global Binding (Window Binding)
+      - value of this is window or console object
+      - default if no context given, except when using strict where undefined is returned
+    - Implicit Binding
+      - most common rule, about 80% of the time
+      - only applies to objects with methods
+      - `this` referes to whatever is left of dot
+    - New Binding
+      - `this` points to `new` object
+      - when a constructor function is used, `this` is referring to the object being created and returned by constructor function
+    - Explicit
+      - uses
+        - `.call` - will immediately invoke function / pass in arguments one by one
+        - `.apply` - will immediately invoke function / pass in args as array
+        - `.bind` - will NOT immediately invoke function / pass in args one by one
+      - Whenever JavaScript's call or apply method is used, this is explicitly defined.
 
 5. Why do we need super() in an extended class?
-
+    super() is used to access a parent object's functions.
+    
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
